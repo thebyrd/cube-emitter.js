@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/metrics.js"></script>
+    <script src="/javascripts/bootstrap.js"></script>
+    <script>
+      ShoptiquesMetrics.init('david@shoptiques.com', 2345, 236256256, 34152546);
+    </script>
+  </head>
+  <body class="container">
+    <div class="row">
+      <div class="span6 offset3">
+        <h1>Shoptiques Metrics</h1>
+        <h2>How it works</h2>
+        <p>You need to somehow pass the <a href="#vital">vital variables</a> to ShoptiquesMetrics.init(), but after that is called anything with the below class names will trigger an <a href="#event">Event</a>.</p>
+
+        <h2>Required Classnames</h2>
+        <p>There are some things that we couldn't get from the element's url alone, so you will need to put these css classes on those elements</p>
+            <h3>.m-related-product</h3>
+            <a href="http://www.shoptiques.com/products/crochet-bracelet" class="m-related-product">Related Product Link</a>
+            <h3>.m-buy-btn</h3>
+            <button type="submit" class="m-buy-btn btn">Buy Button</button>
+            <h3>.m-product-link</h3>
+            <a href="http://www.shoptiques.com/products/crochet-bracelet" class="m-product-link">Product Link</a>
+            <h3>.m-info-page</h3>
+            <a href="http://www.shoptiques.com/contact-us" class="m-info-page">Info Page</a>
+            <h3>.m-navigation-link || .navbar a</h3>
+            <div class="navbar">
+              <a href="http://www.shoptiques.com/" class="m-navigation-link">Navigation Link</a>
+            </div>
+            <h3>.m-newsletter-popup-btn</h3>
+            <a href="" class="m-newsletter-popup-btn"></a>
+            <div class="newsletter">
+              <a class="btn btn-mini btn-primary m-newsletter-popup-btn" data-toggle="modal" href="#newsletter-signup">Sign Up Now!</a>
+              <div class="modal hide" id="newsletter-signup">
+                <div class="modal-header">
+                  <button type="button" class="close-fancy" data-dismiss="modal">X</button>
+                  <h2 class="get-your">Get your</h2>
+                  <h1 class="shoptiques-newsletter">Shoptiques Newsletter</h1>
+                </div>
+                <div class="modal-body">
+                  <div class="example-container">
+                    <img src="http://shoptiques.s3.amazonaws.com/magazine/new_home/PopUp.jpg" alt="example shoptiques newsletter">
+                  </div>
+                  <div class="content">
+                    <p>Sign up for exclusive updates on trends, style tips, new arrivals and more!</p>
+                    <form accept-charset="UTF-8" action="http://www.shoptiques.com/mailing_list_subscribers" class="new_mailing_list_subscriber" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><!-- <input name="authenticity_token" type="hidden" value="/HES1m1zPXR1p5GSQHjOKlMwe6WHVCXTYZSyUFQBIg4=" /> --></div>
+                      <div class="control-group">
+                        <div class="controls">
+                          <div class="input-append">
+                            <input class="email" name="mailing_list_subscriber[email]" placeholder="Enter Email Address" size="30" style="width: 130px; height: 18px; border-right-color: white; font-family: 'futura-pt', sans-serif;" type="email">
+                            <input class="btn btn-primary btn-medium" name="commit" style="font-family: 'futura-pt', sans-serif;-webkit-border-radius: 0 3px 3px 0; -moz-border-radius: 0 3px 3px 0; border-radius: 0 3px 3px 0;" type="submit" value="SIGN UP">
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <p class="xo">We'll be in touch! xo</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </body>
+</html>
